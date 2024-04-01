@@ -1,0 +1,105 @@
+/* Criação de um topo fixo */
+#topo {
+    width: 100%;
+    height: 50px;
+    background-color: #0267C1;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li{
+    /* float:left; Foi necessário utilizar outro código para fazer o menu horizontal, uma vez que o exemplo dado na aula não estava permitindo colocar uma cor de fundo */
+    display: inline;
+}
+
+#menu li a {
+    /* display: block; Foi necessário utilizar outro código para fazer o menu horizontal, uma vez que o exemplo dado na aula não estava permitindo colocar uma cor de fundo */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Defini que item do menu deveria ser sublinhado quando o mouse estiver encima do mesmo */
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Defini uma largura fixa para o conteúdo, além de margens automáticas para as laterais */
+/* Foi necessário colocar um espaçamento antes do conteúdo por causa do cabeçalho ter posição absoluta */
+#conteudo {
+    width: 1024px;
+    margin:auto;
+    padding-top: 40px;
+}
+
+/* Devidi o conteúdo das páginas em duas colunas com tamanhos diferentes */
+#esq {
+    width: 40%;
+    float: left;
+}
+
+/* Defini que a imagem do "Sobre mim" deveria ocupar apenas 90% da largura da coluna */
+#esq img {
+    width: 90%;
+}
+
+#dir {
+    width: 60%;
+    float: right;
+}
+
+/* Inverti as medidas das larguras das colunas para página "Formação Acadêmica" */
+
+#esq-formacao {
+    width: 60%;
+    float: left;
+}
+
+#esq-formacao p {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#dir-formacao {
+    width: 40%;
+    float: right;
+}
+
+#dir-formacao p {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Estilos para o formulário na página de contato */
+
+input {
+    width: 250px;
+}
+
+textarea {
+    width: 250px;
+}
+
+button {
+    background-color: #0088ff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0267C1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
